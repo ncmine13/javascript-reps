@@ -49,6 +49,7 @@ function toonify(accent, sentence) {
 
 }
 
+//not done :(
 ## Round 4
 
 var string;
@@ -92,43 +93,14 @@ wordReverse("Now I know what a TV dinner feels like")
 # => "like feels dinner TV a what know I Now"
 ```
 
-//TWO SPLITS and A LOOP
+
 ## Round 5
 
-var string = "Why not listen to your heart"
-function letterReverse(string) {
-	var newString = string.split("").reverse()
-	return newString
-	for(i=0; i<newString.length; i++) {
-		unShift.newString.push[i]
-		//push and then unshift and then loop to the next
-	}
+function letterReverse(string){
+	var newString = string.split("").reverse().join("")
+	var secondSplit = newString.split(" ")
+	var reverseString = secondSplit.reverse()
+ 	return reverseString.join(" ")
 }
-
-join("")
-
-
-	var string = "Why not listen to your heart"
-	function letterReverse(string) {
-		var newString = string.split("").reverse().join("")
-		return newString}
-
-	function letterReverse() {
-		string.split("").reverse()}
-		var string = "Why not listen to your heart";
-		var reversedString = string.split("").reverse()
-		return reversedString;
-
-	}
-
-Write a function `letterReverse` that accepts a single argument, a string. The function should maintain the order of words in the string but reverse the letters in each word. Don't worry about punctuation. This will be very similar to round 4 except you won't need to split them with a space.
-
-- References:
-  - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" target="_blank">MDN: String.split()</a>
-  - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse" target="_blank">MDN: Array.reverse()</a>
-
-```javascript
-letterReverse("Now I know what a TV dinner feels like")
-# => "woN I wonk tahw a VT rennid sleef ekil"
-letterReverse("Put Hans back on the line")
-# => "tuP snaH kcab no eht enil"
+var string = "Why not listen to your heart";
+letterReverse(string);
